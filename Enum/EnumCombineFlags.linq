@@ -12,6 +12,14 @@ void Main()
 	t.Dump();
 	
 	((Sides)2).Dump();
+	
+	
+	foreach (int x in Enum.GetValues(typeof(Sides)))
+		x.Dump();
+
+	foreach (string y in Enum.GetNames(typeof(Sides)))
+		y.Dump();
+
 }
 
 [Flags]
