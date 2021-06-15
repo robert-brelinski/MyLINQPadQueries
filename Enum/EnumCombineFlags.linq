@@ -7,6 +7,11 @@ void Main()
 	
 	Sides s = Sides.Left | Sides.Right;
 	s.ToString().Dump();
+	
+	int t = (int)Sides.Top;
+	t.Dump();
+	
+	((Sides)2).Dump();
 }
 
 [Flags]
@@ -17,5 +22,3 @@ public enum Sides
 	Bottom = 8,
 	Left = 16
 }
-
-//
